@@ -1,4 +1,7 @@
 # Blog
+[![Build Status](https://travis-ci.org/elxpro/Blog_elx_pro_course_module_2.svg?branch=master)](https://travis-ci.org/elxpro/Blog_elx_pro_course_module_2)
+
+[![codecov](https://codecov.io/gh/elxpro/Blog_elx_pro_course_module_2/branch/master/graph/badge.svg?token=THIQIQASW7)](https://codecov.io/gh/elxpro/Blog_elx_pro_course_module_2)
 
 To start your Phoenix server:
 
