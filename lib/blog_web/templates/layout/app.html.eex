@@ -9,11 +9,11 @@
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
   <body>
-      <nav>
+    <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo right">Logo</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><%=  link "Posts", to: Routes.post_path(@conn, :index) %></li>
           <li><a href="badges.html">Components</a></li>
           <li><a href="collapsible.html">JavaScript</a></li>
         </ul>
