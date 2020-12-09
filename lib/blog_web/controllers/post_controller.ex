@@ -2,6 +2,6 @@ defmodule BlogWeb.PostController do
   use BlogWeb, :controller
 
   def index(conn, params) do
-    conn
+    render(conn, "index.html")
   end
 end
