@@ -3,9 +3,13 @@
   <%= for post <- @posts do %>
     <li class="collection-item">
       <div><%= post.title %>
-          <a href="#!" class="secondary-content">
+          <%=  link to: Routes.post_path(@conn, :show, post.id), class: "secondary-content" do %>
             <i class="material-icons blue-text">send</i>
+          <% end %>
+          <a href="#!" class="secondary-content">
             <i class="material-icons green-text">edit</i>
+          </a>
+          <a href="#!" class="secondary-content">
             <i class="material-icons red-text">delete</i>
           </a>
       </div>
