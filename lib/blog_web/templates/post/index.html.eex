@@ -3,7 +3,7 @@
   <%= for post <- @posts do %>
     <li class="collection-item">
       <div><%= post.title %>
-          <%=  link to: Routes.post_path(@conn, :show, post.id), class: "secondary-content" do %>
+          <%=  link to: Routes.post_path(@conn, :show, post), class: "secondary-content" do %>
             <i class="material-icons blue-text">send</i>
           <% end %>
           <a href="#!" class="secondary-content">

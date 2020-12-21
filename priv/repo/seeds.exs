@@ -9,3 +9,21 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+# alias Blog.Posts
+alias Blog.Posts.Post
+alias Blog.Repo
+
+{:ok, _post} =
+  Post.changeset(%Post{}, %{
+    title: "How to do that?",
+    description: "This is the description on how to bake something."
+  })
+  |> Repo.insert()
+
+{:ok, _post} =
+  Post.changeset(%Post{}, %{
+    title: "How to learn Elixir?",
+    description: "Description something."
+  })
+  |> Repo.insert()
