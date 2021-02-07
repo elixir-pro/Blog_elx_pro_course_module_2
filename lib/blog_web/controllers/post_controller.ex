@@ -8,7 +8,8 @@ defmodule BlogWeb.PostController do
     render(conn, "index.html", posts: posts)
   end
 
-  def show(conn, _params) do
-    render(conn, "show.html")
+  def show(conn, %{"id" => id}) do
+    post = Repo.get(Post, id)
+    render(conn, "show.html", post: post)
   end
 end
